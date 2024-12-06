@@ -21,9 +21,9 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-   /*  this.startSlideshow(); */
+    this.startSlideshow();
   }
-/*
+
   // Method to change the current image
   change(): void {
     this.currentImage = this.images[this.currentIndex];
@@ -33,5 +33,5 @@ export class HomeComponent implements OnInit {
   // Method to start the slideshow
   startSlideshow(): void {
     setInterval(() => this.change(), 3000); // Pass a callback function
-  } */
+  }
 }
