@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    align-items: center;
+
+    color: aliceblue;
+}
+
+.logo {
+    width: 10%;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+
+ul li {
+    list-style-type: none;
+    margin-right: 1rem;
+
+}
+.FacebookIcon{
+    width: 5%;
+    margin-right: 1.5rem;
+}

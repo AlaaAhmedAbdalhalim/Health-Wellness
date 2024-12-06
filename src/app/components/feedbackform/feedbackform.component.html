@@ -1,0 +1,12 @@
+<div class=" d-flex flex-row justify-content-between rounded shadow-lg my-5 mx-5" >
+    <div class="mx-auto my-auto">
+      <h1 class="mx-auto" > Hello there.</h1>
+      <p class="text-secondary"> you need an account to continue </p>
+      <input type="text" class=" form-control my-3  d-inline-block"  placeholder="First name" aria-label="First name"  required="{{'required'}}">
+      <input type="text" class="form-control my-3 d-inline-block " required placeholder="Last name" aria-label="Last name">
+      <input type="text" class="form-control my-3 " [required]="true" placeholder="Email" aria-label="Email" >
+      <input type="password" #password class="form-control my-3" required placeholder="Password">
+<!--       <button class="d-block mx-auto btn btn-primary" (click)="signup()" type="submit"> Sign Up </button> -->
+      <p class="d-inline-block  mt-1 mx-auto">I have already an account </p>
+      <a href="" class="mx-auto" routerLink="../Login"> Log in</a>
+    </div> 
