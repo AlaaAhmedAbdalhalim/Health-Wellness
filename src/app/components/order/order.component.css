@@ -1,4 +1,6 @@
-.container{
-    background-color: #31100A;
-    height: 100vh;
+
+.cont{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
 }

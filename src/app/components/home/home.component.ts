@@ -1,11 +1,15 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { HeaderComponent } from "../header/header.component";
-import { ElementRef, Renderer2, ViewChild } from '@angular/core';
+
 import { OrderComponent } from "../order/order.component";
+import { FeedbackformComponent } from "../feedbackform/feedbackform.component";
+import { isPlatformBrowser } from '@angular/common';
+import { Inject, PLATFORM_ID } from '@angular/core';
+
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, OrderComponent],
+  imports: [HeaderComponent, OrderComponent, FeedbackformComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -17,21 +21,39 @@ export class HomeComponent implements OnInit {
   ];
   currentIndex: number = 0;
   currentImage: string = this.images[0];
+  intervalId: any;
 
-  constructor() {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
   ngOnInit(): void {
-    this.startSlideshow();
+    if (isPlatformBrowser(this.platformId)) {
+      this.preloadImages();
+      this.startSlideshow();
+    }
   }
-
-  // Method to change the current image
   change(): void {
-    this.currentImage = this.images[this.currentIndex];
+
     this.currentIndex = (this.currentIndex + 1) % this.images.length;
+    this.currentImage = this.images[this.currentIndex];
+
+
+  }
+  preloadImages(): void {
+    this.images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  } 
+
+  startSlideshow(): void {
+
+    this.intervalId = setInterval(() => this.change(), 3000);
   }
 
-  // Method to start the slideshow
-  startSlideshow(): void {
-    setInterval(() => this.change(), 3000); // Pass a callback function
+  ngOnDestroy(): void {
+    clearInterval(this.intervalId);
   }
+
+
+
 }

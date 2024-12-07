@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
+import { FeedbackformComponent } from "../feedbackform/feedbackform.component";
 
 @Component({
   selector: 'app-order',
   standalone: true,
-  imports: [],
   templateUrl: './order.component.html',
   styleUrl: './order.component.css'
 })
