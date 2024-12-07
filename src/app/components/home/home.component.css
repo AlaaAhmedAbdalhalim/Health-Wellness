@@ -8,8 +8,9 @@
 
 .container2 {
     background-color: var(--primary-color);
-    height: 100vh;
+    height: 120vh;
     width: 100vmax;
+    padding-top: 2rem;
 }
 
 .arrows {
