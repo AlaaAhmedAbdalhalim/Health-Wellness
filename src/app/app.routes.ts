@@ -5,11 +5,11 @@ import { FeedbackformComponent } from './components/feedbackform/feedbackform.co
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-    {path:'' ,component: HomeComponent,children :[
-        {path:'order' ,component: OrderComponent,title:'order' },
-        {path:'feedback' ,component: FeedbackformComponent,title:'feedback' },
+    {path:'' ,component: HomeComponent},
+        {path:'order' ,component: OrderComponent},
+        {path:'feedback' ,component: FeedbackformComponent},
        
-    ] },
+    
  
 ];
 
