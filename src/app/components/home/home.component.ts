@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { HeaderComponent } from "../header/header.component";
 import { RouterModule } from '@angular/router';
-
+import { OrderComponent } from '../order/order.component';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { FeedbackformComponent } from "../feedbackform/feedbackform.component";
@@ -9,7 +9,7 @@ import { FeedbackformComponent } from "../feedbackform/feedbackform.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, RouterModule, FeedbackformComponent],
+  imports: [HeaderComponent, RouterModule, FeedbackformComponent, OrderComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
