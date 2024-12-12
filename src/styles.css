@@ -6,6 +6,7 @@ body{
 :root{
     --primary-color :#31100A;
     --scandray-color: #BD945B;
+    --text-color:aliceblue;
 }
 html {
     scroll-behavior: smooth;

@@ -28,9 +28,23 @@ ul li {
 }
 
   a{
-    color: aliceblue;
+    color: var(--text-color);
     text-decoration: none;
   }
   a:hover{
     color: var( --scandray-color);
   }
+  select{
+    border: none;
+    padding: 0.2rem 0.8rem;
+   background-color: transparent;
+   color: var(--text-color);
+  }
+/*  select option{
+    background-color: transparent;
+    color: transparent;
+   /*  color: var(--text-color); 
+  }
+  option:hover{
+    background-color: transparent;
+  } */

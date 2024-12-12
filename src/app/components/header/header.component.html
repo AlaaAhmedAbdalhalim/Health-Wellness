@@ -2,16 +2,16 @@
     <img src="../../../assets/logo.svg" alt=" Health&wellness logo " class="logo" routerLink="Home">
 
     <ul>
-      <li>Menu</li>
+      <li><a routerLink="/" >Menu</a></li>
       <li  (click)="scrollToSection('locationSection')"><a routerLink="/location" >Location</a></li>
       <li  (click)="scrollToSection('feedbackSection')"><a routerLink="/feedback" >Feedback</a></li>
       <li (click)="scrollToSection('orderSection')"><a routerLink="/order" >Order Now</a></li>
       
-      <li>About Us</li>
+      <li><a routerLink="/" >About Us</a></li>
       <li>
         <select name="language" id="language" class="language">
-          <option>AR</option>
-          <option>EG</option>
+          <option >AR</option>
+          <option selected>EG</option>
         </select>
       </li>
 
