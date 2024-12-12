@@ -16,7 +16,6 @@ html {
     width: 100vmax;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    height: 100vh;
 }
 h1{
     color: var(--scandray-color);
