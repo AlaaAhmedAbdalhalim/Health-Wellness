@@ -1,24 +1,18 @@
-.container {
+/* .container {
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100vmax;
 }
-
+ */
 .container2 {
     background-color: var(--primary-color);
-   
     width: 100vmax;
     padding-top: 2rem;
 }
 
-.arrows {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60vh;
-}
+
 @media (max-width:667px) {
     .container{
         height: 150vmax;

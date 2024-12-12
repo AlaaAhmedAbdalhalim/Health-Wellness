@@ -2,7 +2,6 @@ nav {
     display: flex;
     align-items: center;
 
-    color: aliceblue;
 }
 
 .logo {
@@ -31,4 +30,7 @@ ul li {
   a{
     color: aliceblue;
     text-decoration: none;
+  }
+  a:hover{
+    color: var( --scandray-color);
   }

@@ -1,0 +1,10 @@
+<div class="container" [style.background-image]="'url(' + currentImage + ')'">
+    <app-header></app-header>
+    <div class="arrows">
+        <img src="../../../assets/leftArrow.svg" alt="arrow icon" (click)="change()">
+        <img src="../../../assets/rightArrow.svg" alt="arrow icon" (click)="change()">
+    </div>
+ 
+</div>
+
+<router-outlet></router-outlet>

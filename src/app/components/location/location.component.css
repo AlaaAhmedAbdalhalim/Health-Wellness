@@ -1,0 +1,23 @@
+.container2{
+    color: aliceblue;
+
+    
+}
+h3{
+    padding-left: 22rem;
+}
+.info{
+    display: flex;
+    align-items: center;
+    padding-left: 22rem;
+}
+.info img {
+    padding-right: 1rem;
+}
+.clocks{
+    line-height: 0.2rem;
+}
+
+h1{
+    text-align: center;
+}

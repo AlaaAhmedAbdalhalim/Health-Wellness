@@ -1,33 +1,33 @@
-<hr>
-<div class="container">
-  <h1>WE VALUE YOUR FEEDBACK</h1>
-  <div class="one">
-    <div>
-      <label for="Firstname"> First name </label><br> 
-      <input type="text" class=" form-control my-3  d-inline-block" aria-label="First name" id="Firstname"
-        required="{{'required'}}">
+<div class="container2" id="feedbackSection">
+  <hr>
+  <div class="container">
+    <h1>WE VALUE YOUR FEEDBACK</h1>
+    <div class="one">
+      <div>
+        <label for="Firstname"> First name </label><br>
+        <input type="text" class=" form-control my-3  d-inline-block" aria-label="First name" id="Firstname"
+          required="{{'required'}}">
+      </div>
+      <div>
+        <label for="Lasttname"> Last name </label><br>
+        <input type="text" class="form-control my-3 d-inline-block " required aria-label="Last name" id="Lastname">
+      </div>
+    </div>
+    <div class="one">
+      <div>
+        <label for="Email"> Email </label><br>
+        <input type="text" class="form-control my-3 " [required]="true" id="Email" aria-label="Email">
+      </div>
+      <div>
+        <label for="Phone"> Phone Number </label><br>
+        <input type="number" class="form-control my-3 " [required]="true" id="Phone" aria-label="Phone Number">
+      </div>
     </div>
     <div>
-    <label for="Lasttname"> Last name </label><br>
-    <input type="text" class="form-control my-3 d-inline-block " required aria-label="Last name"
-      id="Lastname">
-  </div>
-</div>
-<div  class="one">
-  <div>
-    <label for="Email"> Email </label><br> 
-  <input type="text" class="form-control my-3 " [required]="true" id="Email" aria-label="Email">
-  </div>
-  <div>
-    <label for="Phone"> Phone Number </label><br> 
-  <input type="number" class="form-control my-3 " [required]="true" id="Phone"
-    aria-label="Phone Number">
+      <label for="" class="Message">Message</label><br>
+      <textarea cols="92" rows="6">  </textarea>
     </div>
-</div>
-<div>
-  <label for="" class="Message">Message</label><br>
-  <textarea cols="92" rows="6">  </textarea>
-</div>
-<button class=" btn btn-primary" type="submit"> Send Your Feedback </button>
+    <button class=" btn btn-primary" type="submit"> Send Your Feedback </button>
 
+  </div>
 </div>

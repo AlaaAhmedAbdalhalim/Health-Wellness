@@ -11,5 +11,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  scrollToSection(sectionId:string):void{
+    const element = document.getElementById(sectionId);
+    if(element){
+      element.scrollIntoView({behavior:'smooth'});
+    }
+  }
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ScrollService } from '../../services/scroll.service';
 
 @Component({
   selector: 'app-feedbackform',
@@ -8,5 +10,16 @@ import { Component } from '@angular/core';
   styleUrl: './feedbackform.component.css'
 })
 export class FeedbackformComponent {
+
+  
+    constructor(private route: ActivatedRoute, private scrollService: ScrollService) {}
+
+  ngOnInit(): void {
+    this.route.fragment.subscribe((fragment) => {
+       this.scrollService.scrollToFragment(fragment); // استدعاء الخدمة
+    });
+  }
+   
+  
 
 }

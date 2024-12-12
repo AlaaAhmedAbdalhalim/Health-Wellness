@@ -1,11 +1,11 @@
 <nav>
-    <img src="../../../assets/logo.svg" alt=" Health&wellness logo " class="logo">
+    <img src="../../../assets/logo.svg" alt=" Health&wellness logo " class="logo" routerLink="Home">
 
     <ul>
       <li>Menu</li>
-      <li>Location</li>
-      <li><a routerLink="feedback">Feedback</a></li>
-      <li><a routerLink="order">Order Now</a></li>
+      <li  (click)="scrollToSection('locationSection')"><a routerLink="/location" >Location</a></li>
+      <li  (click)="scrollToSection('feedbackSection')"><a routerLink="/feedback" >Feedback</a></li>
+      <li (click)="scrollToSection('orderSection')"><a routerLink="/order" >Order Now</a></li>
       
       <li>About Us</li>
       <li>
